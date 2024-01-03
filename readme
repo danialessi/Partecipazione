@@ -1,0 +1,7 @@
+modalità "watch"
+
+npx mix watch
+
+per produzione
+
+npx mix --production
