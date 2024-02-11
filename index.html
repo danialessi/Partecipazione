@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
     <title>Fedi & Dani</title>
 
@@ -21,8 +17,8 @@
 
     <header>
         <!-- burger menu -->
-        <div class="burger-menu-container">
-            <a href="#"><h2 class="fedi-dani">~ Fedi & Dani ~</h2></a>
+        <div id="burger" class="burger-menu-container">
+            <a href="#"><h2 class="fedi-dani">Fedi & Dani</h2></a>
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -39,39 +35,34 @@
         <!-- end burger menu -->
     </header>
 
-    <div class="hero">
-        <div class="data">
-            <h2>~ Fedi & Dani ~</h2>
-            <h3>Sabato, 1 Giugno 2024</h3>
-            <p id="countdown"></p>
-            <nav class="menu">
-                <a href="#dove">DOVE</a>
-                <a href="#come">COME</a>
-                <a href="#sulserio">SUL SERIO?</a>
-                <a href="#civieni">CI VIENI?</a>
-            </nav>
-        </div>
-        
-        <div class="hero-image"></div>
-    </div>
-
-    <!-- <img src="img/pianta-white.png" alt=""> -->
-
     <main>
-        <!-- DOVE -->
-        <section id="dove" class="background-white">
-            <!-- <div class="baw_divider">
-                <img src="img/baw_divider.png">
-            </div> -->
-            <div class="section-title">
-                <h2>DOVE</h2>
+        <section id="hero" class="real-hero">
+            <div id="title_container" class="title">
+                <h1 id="hello"></h1>
+                <h2 id="stoca"></h2>
             </div>
+            <div id="image_container" class="hero_image">
+                <h2>Fedi & Dani</h2>
+                <img id="fedi-dani-mask" class="maschera" src="img/maschera.jpeg" alt="">
+                <h3>Sabato, 1 Giugno 2024</h3>
+                <div id="cta" class="cta">
+                    <p id="countdown"></p>
+                    <a href="#quando">Scopri di più</a>
+                    <p class="arrow bounce">&darr;</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- DOVE -->
+        <section id="dove" class="">
             <div class="section-content image-text">
                 <div class="text">
+                    <div class="section-title">
+                        <h2>DOVE</h2>
+                    </div>
                     <p>La cerimonia si terrà alle ore 11:00 a 
-                        <a href="https://maps.app.goo.gl/rkYqMn92aUXgJxqt9">Palazzo Gradari <i class="fa-solid fa-arrow-right">Vai</i></a> 
-                        e a seguire si andrà a pranzo al ristorante 
+                        <a href="https://maps.app.goo.gl/rkYqMn92aUXgJxqt9">Palazzo Gradari <i class="fa-solid fa-arrow-right">Vai</i></a><br> 
+                        A seguire pranzo al ristorante 
                         <a href="https://maps.app.goo.gl/juUn1WK8Tw89e8fa8">Adagio <i class="fa-solid fa-arrow-right">Vai</i></a>
                     </p>
                 </div>
@@ -82,16 +73,12 @@
         <!-- END DOVE -->
 
         <!-- COME -->
-        <section id="come" class="background-black">
-            <!-- <div class="baw_divider">
-                <img src="img/baw_divider.png">
-            </div> -->
-            <div class="section-title">
-                <h2>COME</h2>
-            </div>
-
+        <section id="come" class="">
             <div class="section-content text-image">
                 <div class="text">
+                    <div class="section-title">
+                        <h2>COME</h2>
+                    </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium est, exercitationem voluptatum nam error eveniet doloribus ipsam ullam suscipit rerum sequi ut quae voluptatibus velit. Nemo adipisci necessitatibus sint culpa.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium est, exercitationem voluptatum nam error eveniet doloribus ipsam ullam suscipit rerum sequi ut quae voluptatibus velit. Nemo adipisci necessitatibus sint culpa.
                     </p>

@@ -7,6 +7,59 @@
   \********************/
 /***/ (() => {
 
+// TYPEWRITING FUNCTION
+var i = 0;
+var j = 0;
+var title = 'SAI CHI SI SPOSA?';
+var hello = document.getElementById("hello");
+var stocaText = 'Sto cazzo';
+var stoca = document.getElementById("stoca");
+var speed = 60;
+var stocaSpeed = 250;
+
+function typeTitle() {
+  setTimeout(function typeWriter() {
+    if (i < title.length) {
+      hello.innerHTML += title.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }, 400);
+}
+
+;
+
+function typeStoca() {
+  setTimeout(function typeWriterStoca() {
+    if (j < stocaText.length) {
+      stoca.innerHTML += stocaText.charAt(j);
+      j++;
+      setTimeout(typeWriterStoca, stocaSpeed);
+    }
+  }, 2000);
+}
+
+;
+typeTitle();
+typeStoca(); // end TYPEWRITING FUNCTION
+//nascondo titolo
+
+setTimeout(function () {
+  document.getElementById("title_container").classList.add("hide");
+}, 3200); //rivelo immagine
+
+setTimeout(function () {
+  document.getElementById("fedi-dani-mask").classList.add("show");
+}, 4000); //rivelo sfondo
+
+setTimeout(function () {
+  document.getElementById("hero").classList.add("show_hero");
+  document.getElementById("burger").classList.add("show");
+}, 5000); //rivelo cta
+
+setTimeout(function () {
+  document.getElementById("cta").classList.add("show");
+}, 6000);
 $(document).ready(function () {
   $('.burger-menu').click(function () {
     $('.burger-menu-list-container').toggleClass("burger-menu-open");
@@ -20,7 +73,7 @@ $(document).ready(function () {
   };
 
   function revealTitle() {
-    if (window.scrollY > 160) {
+    if (window.scrollY > 250) {
       $('.fedi-dani').addClass('show-title');
     } else {
       $('.fedi-dani').removeClass('show-title');
