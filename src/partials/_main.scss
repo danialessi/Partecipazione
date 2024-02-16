@@ -17,7 +17,6 @@
         transition: .7s;
         padding: 75px 0 0 0;
         z-index: 9;
-        font-family: sans-serif;
 
         h1 {
             font-size: clamp(40px, 3.646vw, 70px);
@@ -62,7 +61,8 @@
 
     @include mobile {
         padding: 0;
-        height: 80vh;
+        height: 100vh;
+        top: 90px;
     }
 }
 

@@ -44,8 +44,9 @@ setTimeout(function() {
 
 //rivelo sfondo
 setTimeout(function() {
-  document.getElementById("hero").classList.add("show_hero");
+  document.body.classList.add("show_hero");
   document.getElementById("burger").classList.add("show");
+
 }, 5000);
 
 //rivelo cta
