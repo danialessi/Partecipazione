@@ -14,6 +14,7 @@ body {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -27,8 +28,8 @@ p {
 
 .burger-menu-container {
   display: none;
-  background-color: #c5496c;
   z-index: 9;
+  position: fixed;
 }
 @media screen and (max-width: 767px) {
   .burger-menu-container {
@@ -41,7 +42,7 @@ p {
   }
   .burger-menu-container .fedi-dani {
     color: white;
-    padding: 0 20px 0 115px;
+    padding: 0 20px 0 140px;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.1s;
@@ -81,6 +82,8 @@ p {
 }
 .burger-menu-container .burger-menu-list-container .burger-menu-list {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .burger-menu-container .burger-menu-list-container img {
   width: 78%;
@@ -90,14 +93,72 @@ p {
   z-index: 9;
 }
 
+.box-shadow {
+  box-shadow: 0px 0px 28px -3px #333333;
+}
+
+.burger-background {
+  background: rgba(0, 0, 0, 0.9215686275);
+}
+
 .real-hero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: 0.7s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.real-hero .title {
+.real-hero .delete {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .real-hero {
+    padding: 0;
+    height: 100vh;
+  }
+}
+
+.show_background {
+  background-image: url("../img/sabato.jpg");
+}
+
+.hero_image {
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero_image h2 {
+  font-size: 50px;
+  color: black;
+}
+.hero_image h3 {
+  font-size: 30px;
+  color: black;
+}
+@media screen and (max-width: 767px) {
+  .hero_image {
+    top: 155px;
+  }
+  .hero_image h2 {
+    position: relative;
+    top: 20px;
+  }
+}
+
+.sposi,
+.data {
+  transition: 0.7s;
+  opacity: 0;
+}
+
+.title {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -108,49 +169,20 @@ p {
   padding: 75px 0 0 0;
   z-index: 9;
 }
-.real-hero .title h1 {
+.title h1 {
   font-size: clamp(40px, 3.646vw, 70px);
   color: black;
 }
-.real-hero .title h2 {
+.title h2 {
   font-size: 40px;
   color: black;
   z-index: 9;
 }
 @media screen and (max-width: 767px) {
-  .real-hero .title {
+  .title {
     width: 100%;
     padding: 0;
-  }
-}
-.real-hero .hero_image {
-  transition: 0.7s;
-  position: absolute;
-  top: 70px;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.real-hero .hero_image h2 {
-  font-size: 50px;
-}
-.real-hero .hero_image h3 {
-  margin-top: 20px;
-  font-size: 30px;
-}
-@media screen and (max-width: 767px) {
-  .real-hero .hero_image {
-    top: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .real-hero {
-    padding: 0;
-    height: 100vh;
-    top: 90px;
+    height: 50%;
   }
 }
 
@@ -180,12 +212,13 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 .cta a {
-  padding: 20px 20px 0 20px;
-  color: white;
+  padding: 5px 20px 0 20px;
+  color: black;
   font-size: clamp(20px, 1.302vw, 25px);
 }
 .cta .arrow {
-  color: white;
+  color: black;
+  margin-top: 0;
 }
 .cta .bounce {
   -webkit-animation: bounce 2s infinite;
@@ -222,10 +255,6 @@ p {
   opacity: 1;
 }
 
-.show_hero {
-  background-color: #c5496c;
-}
-
 /* section */
 section {
   position: relative;
@@ -239,6 +268,7 @@ section {
 @media screen and (max-width: 767px) {
   section .section-title {
     padding-bottom: 20px;
+    text-align: center;
   }
 }
 section .text-image {
@@ -261,6 +291,9 @@ section .section-content .text {
   padding: 100px;
   width: 50%;
 }
+section .section-content .text a {
+  color: #c5496c;
+}
 @media screen and (max-width: 767px) {
   section .section-content .text {
     width: 100%;
@@ -269,7 +302,6 @@ section .section-content .text {
 }
 section .section-content .image {
   width: 50%;
-  background-image: url("../img/adagio_1.png");
   background-size: cover;
   height: 630px;
 }
@@ -282,6 +314,19 @@ section .section-content .image {
 }
 section .section-content .image img {
   width: 100%;
+}
+section .section-content .adagio {
+  background-image: url("../img/adagio_1.png");
+}
+section .section-content .anziani {
+  background-image: url("../img/unnamed.gif");
+}
+section .section-content .madeira {
+  background-image: url("../img/madeira.jpg");
+}
+section .section-content .iban {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
 }
 
 .fedi_dani {
@@ -296,5 +341,4 @@ h3 {
 p {
   font-size: clamp(18px, 1.042vw, 20px);
   margin-top: 20px;
-  display: inline-block;
 }

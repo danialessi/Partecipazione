@@ -40,11 +40,14 @@ setTimeout(function () {
 //rivelo immagine
 setTimeout(function() {
   document.getElementById("fedi-dani-mask").classList.add("show");
+  document.getElementById("title_container").classList.add("delete");
 }, 4000);
 
 //rivelo sfondo
 setTimeout(function() {
-  document.body.classList.add("show_hero");
+  document.getElementById("hero").classList.add("show_background");
+  document.getElementById("sposi").classList.add("show");
+  document.getElementById("data").classList.add("show");
   document.getElementById("burger").classList.add("show");
 
 }, 5000);
@@ -72,8 +75,12 @@ $( document ).ready(function() {
   function revealTitle() {
       if (window.scrollY > 250) {
         $('.fedi-dani').addClass('show-title');
+        $('.burger-menu-container').addClass('burger-background');
+        //$('.burger-menu-container').addClass('box-shadow');
       } else {
           $('.fedi-dani').removeClass('show-title');
+          $('.burger-menu-container').removeClass('burger-background');
+          //$('.burger-menu-container').removeClass('box-shadow');
       }
   }
 })

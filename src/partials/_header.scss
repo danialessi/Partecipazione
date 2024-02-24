@@ -1,8 +1,7 @@
 .burger-menu-container {
     display: none;
-    background-color: #c5496c;
     z-index: 9;
-    
+    position: fixed;
 
     @include mobile {
         display: flex;
@@ -14,7 +13,7 @@
 
         .fedi-dani {
             color: white;
-            padding: 0 20px 0 115px;
+            padding: 0 20px 0 140px;
             opacity: 0;
             transform: translateY(30px);
             transition: 0.1s;
@@ -59,6 +58,8 @@
 
         .burger-menu-list {
             margin-top: 100px;
+            display: flex;
+            flex-direction: column;
         }
 
         img {
@@ -71,4 +72,12 @@
         z-index: 9;
     }
     
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 28px -3px #333333;
+}
+
+.burger-background {
+    background: #000000eb;
 }

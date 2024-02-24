@@ -5,64 +5,89 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    transition: .7s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-    .title {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: 100%;
-        transition: .7s;
-        padding: 75px 0 0 0;
-        z-index: 9;
-
-        h1 {
-            font-size: clamp(40px, 3.646vw, 70px);
-            color: black;
-        }
-
-        h2 {
-            font-size: 40px;
-            color: black;
-            z-index: 9;
-        }
-
-        @include mobile {
-            width: 100%;
-            padding: 0;
-        }
-    }
-
-    .hero_image {
-        transition: .7s;
-        position: absolute;
-        top: 70px;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: white;
-
-        h2 {
-            font-size: 50px;
-        }
-        h3 {
-            margin-top: 20px;
-            font-size: 30px;
-        }
-
-        @include mobile {
-            top: 0;
-        }
+    .delete {
+        display: none;
     }
 
     @include mobile {
         padding: 0;
         height: 100vh;
-        top: 90px;
+        
+    }
+}
+
+.show_background {
+    background-image: url('../img/sabato.jpg');
+}
+
+.hero_image {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    h2 {
+        font-size: 50px;
+        color: black;
+    }
+    h3 {
+        font-size: 30px;
+        color: black;
+    }
+
+    @include mobile {
+        top: 155px;
+
+        h2 {
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+
+.sposi,
+.data {
+    transition: .7s;
+    opacity: 0;
+}
+
+
+
+.title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    transition: .7s;
+    padding: 75px 0 0 0;
+    z-index: 9;
+
+    h1 {
+        font-size: clamp(40px, 3.646vw, 70px);
+        color: black;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: black;
+        z-index: 9;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 0;
+        height: 50%;
     }
 }
 
@@ -93,13 +118,14 @@
     }
 
     a {
-        padding: 20px 20px 0 20px;
-        color: white;
+        padding: 5px 20px 0 20px;
+        color: black;
         font-size: clamp(20px, 1.302vw, 25px);
     }
     
     .arrow {
-        color: white;
+        color: black;
+        margin-top: 0;
     }
 
     .bounce {
@@ -119,18 +145,12 @@
     }
 }
 
-
-
 .hide {
     opacity: 0;
 }
 
 .show {
     opacity: 1;
-}
-
-.show_hero {
-    background-color: #c5496c;
 }
 
 /* section */
@@ -146,6 +166,7 @@ section {
 
         @include mobile {
             padding-bottom: 20px;
+            text-align: center;
         }
     }
 
@@ -171,6 +192,10 @@ section {
         .text {
             padding: 100px;
             width: 50%;
+
+            a {
+                color: #c5496c;
+            }
             @include mobile {
                 width: 100%;
                 padding: 0 30px 30px 30px;
@@ -179,7 +204,6 @@ section {
 
         .image {
             width: 50%;
-            background-image: url('../img/adagio_1.png');
             background-size: cover;
             height: 630px;
             
@@ -192,6 +216,21 @@ section {
             img {
                 width: 100%;
             }
+        }
+
+        .adagio {
+            background-image: url('../img/adagio_1.png');
+        }
+        .anziani {
+            background-image: url('../img/unnamed.gif');
+        }
+        .madeira {
+            background-image: url('../img/madeira.jpg');
+        }
+
+        .iban {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
         }
     }
 }
@@ -208,5 +247,5 @@ h3 {
 p {
     font-size: clamp(18px, 1.042vw, 20px);
     margin-top: 20px;
-    display: inline-block;
 }
+
