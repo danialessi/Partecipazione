@@ -30,6 +30,7 @@ p {
   display: none;
   z-index: 9;
   position: fixed;
+  padding: 10px 0;
 }
 @media screen and (max-width: 767px) {
   .burger-menu-container {
@@ -42,7 +43,6 @@ p {
   }
   .burger-menu-container .fedi-dani {
     color: white;
-    padding: 0 20px 0 140px;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.1s;
@@ -52,16 +52,19 @@ p {
     transform: translateY(0);
   }
 }
+.burger-menu-container .fedi-dani-container {
+  margin: auto;
+  display: inline-block;
+}
 .burger-menu-container .burger-menu {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
   font-size: 25px;
   color: white;
-}
-.burger-menu-container .burger-menu img {
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  right: 0;
+  z-index: 9;
 }
 .burger-menu-container .burger-menu-list-container {
   background-color: rgba(0, 0, 0, 0.9215686275);
@@ -89,7 +92,7 @@ p {
   width: 78%;
 }
 .burger-menu-container .burger-menu-open {
-  top: 65px;
+  top: 68px;
   z-index: 9;
 }
 
@@ -109,7 +112,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 .real-hero .delete {
   display: none;
@@ -122,7 +124,12 @@ p {
 }
 
 .show_background {
-  background-image: url("../img/sabato.jpg");
+  background-image: url("../img/sabatok.jpg");
+}
+@media screen and (max-width: 767px) {
+  .show_background {
+    background-image: url("../img/sabatok-mobile.jpg");
+  }
 }
 
 .hero_image {
@@ -135,21 +142,12 @@ p {
   justify-content: center;
 }
 .hero_image h2 {
-  font-size: 50px;
+  font-size: clamp(40px, 2.604vw, 50px);
   color: black;
 }
 .hero_image h3 {
-  font-size: 30px;
+  font-size: clamp(20px, 1.563vw, 30px);
   color: black;
-}
-@media screen and (max-width: 767px) {
-  .hero_image {
-    top: 155px;
-  }
-  .hero_image h2 {
-    position: relative;
-    top: 20px;
-  }
 }
 
 .sposi,
@@ -170,7 +168,7 @@ p {
   z-index: 9;
 }
 .title h1 {
-  font-size: clamp(40px, 3.646vw, 70px);
+  font-size: clamp(35px, 3.646vw, 70px);
   color: black;
 }
 .title h2 {
@@ -304,16 +302,13 @@ section .section-content .image {
   width: 50%;
   background-size: cover;
   height: 630px;
+  background-position: center;
 }
 @media screen and (max-width: 767px) {
   section .section-content .image {
     width: 100%;
-    height: 62vh;
-    background-position: center;
+    height: 400px;
   }
-}
-section .section-content .image img {
-  width: 100%;
 }
 section .section-content .adagio {
   background-image: url("../img/adagio_1.png");
@@ -329,6 +324,11 @@ section .section-content .iban {
   font-size: 14px;
 }
 
+@media screen and (max-width: 767px) {
+  #dove {
+    padding-top: 30px;
+  }
+}
 .fedi_dani {
   font-size: clamp(38px, 3.125vw, 60px);
   color: white;

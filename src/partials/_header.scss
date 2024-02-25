@@ -2,6 +2,7 @@
     display: none;
     z-index: 9;
     position: fixed;
+    padding: 10px 0;
 
     @include mobile {
         display: flex;
@@ -13,7 +14,6 @@
 
         .fedi-dani {
             color: white;
-            padding: 0 20px 0 140px;
             opacity: 0;
             transform: translateY(30px);
             transition: 0.1s;
@@ -25,17 +25,20 @@
         }
     }
 
+    .fedi-dani-container {
+        margin: auto;
+        display: inline-block;
+    }
+
     .burger-menu {
         display: flex;
         justify-content: flex-end;
         padding: 20px;
         font-size: 25px;
         color: white;
-
-        img {
-            width: 40px;
-            height: 40px;
-        }
+        position: absolute;
+        right: 0;
+        z-index: 9;
     }
 
     .burger-menu-list-container {
@@ -68,7 +71,7 @@
     }
 
     .burger-menu-open {
-        top: 65px;
+        top: 68px;
         z-index: 9;
     }
     
