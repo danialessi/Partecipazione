@@ -19,7 +19,8 @@ a {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .background-white {
@@ -72,7 +73,7 @@ p {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  top: -900px;
+  top: -933px;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -92,7 +93,7 @@ p {
   width: 78%;
 }
 .burger-menu-container .burger-menu-open {
-  top: 68px;
+  top: 67px;
   z-index: 9;
 }
 
@@ -133,20 +134,24 @@ p {
 }
 
 .hero_image {
-  position: absolute;
-  top: 100px;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 35px;
+}
+@media screen and (max-width: 767px) {
+  .hero_image {
+    margin-top: 0;
+  }
 }
 .hero_image h2 {
   font-size: clamp(40px, 2.604vw, 50px);
   color: black;
 }
 .hero_image h3 {
-  font-size: clamp(20px, 1.563vw, 30px);
+  font-size: clamp(25px, 1.563vw, 30px);
   color: black;
 }
 
@@ -166,6 +171,8 @@ p {
   transition: 0.7s;
   padding: 75px 0 0 0;
   z-index: 9;
+  position: absolute;
+  top: 10%;
 }
 .title h1 {
   font-size: clamp(35px, 3.646vw, 70px);
@@ -187,13 +194,19 @@ p {
 .maschera {
   box-shadow: 0px 0px 28px -3px #333333;
   border: 20px solid white;
-  width: 100%;
+  width: 35vw;
   opacity: 0;
   transition: 0.7s;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .maschera {
+    width: 70vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .maschera {
     border: 10px solid white;
+    width: 100%;
   }
 }
 
@@ -259,7 +272,7 @@ section {
 }
 @media screen and (max-width: 767px) {
   section {
-    padding: 80px 0 0 0;
+    padding: 50px 0 0 0;
     height: 100vh;
   }
 }
@@ -310,6 +323,9 @@ section .section-content .image {
     height: 400px;
   }
 }
+section .section-content .image img {
+  width: 100%;
+}
 section .section-content .adagio {
   background-image: url("../img/adagio_1.png");
 }
@@ -321,7 +337,7 @@ section .section-content .madeira {
 }
 section .section-content .iban {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -336,9 +352,4 @@ section .section-content .iban {
 
 h3 {
   font-size: clamp(25px, 1.563vw, 30px);
-}
-
-p {
-  font-size: clamp(18px, 1.042vw, 20px);
-  margin-top: 20px;
 }
