@@ -36,7 +36,7 @@ function typeStoca() {
       j++;
       setTimeout(typeWriterStoca, stocaSpeed);
     }
-  }, 2000);
+  }, 1800);
 }
 
 ;
