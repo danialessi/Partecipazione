@@ -41,11 +41,11 @@
     
 
     h2 {
-        font-size: clamp(40px, 2.604vw, 50px);
+        font-size: clamp(50px, 3.385vw, 65px);
         color: black;
     }
     h3 {
-        font-size: clamp(25px, 1.563vw, 30px);
+        font-size: 35px;
         color: black;
     }
 
@@ -73,13 +73,13 @@
     top: 10%;
 
     h1 {
-        font-size: clamp(35px, 3.646vw, 70px);
-        color: black;
+        font-size: clamp(50px, 3.646vw, 70px);
+        color: white;
     }
 
     h2 {
         font-size: 40px;
-        color: black;
+        color: white;
         z-index: 9;
     }
 
@@ -157,34 +157,14 @@
     opacity: 1;
 }
 
-/* section */
+/* SECTION */
 section {
     position: relative;
+    background-color: #5c7378;
+    padding: 50px 0;
 
     @include mobile {
         padding: 50px 0 0 0;
-        height: 100vh;
-    }
-
-    .section-title {
-
-        @include mobile {
-            padding-bottom: 20px;
-            text-align: center;
-        }
-    }
-
-    .text-image {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .image-text {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .section-content {
@@ -192,17 +172,41 @@ section {
         @include mobile {
             flex-direction: column;
         }
-    
-        .text {
-            padding: 100px;
-            width: 50%;
 
-            a {
-                color: #c5496c;
-            }
+        .section-inner {
+            width: 50%;
+            padding: 0 100px;
+
             @include mobile {
                 width: 100%;
-                padding: 0 30px 30px 30px;
+                padding: 0 20px 50px;
+            }
+        }
+
+        .section-title {
+            
+            h2 {
+                font-size: 40px;
+                color: white;
+                border-bottom: 2px solid white;
+            }
+        }
+    
+        .text {
+
+            p {
+                color: white;
+            }
+
+            a {
+                color: black;
+                border: 1px solid black;
+                padding: 2px 10px;
+
+                @include mobile {
+                    display: inline-block;
+                    margin-top: 5px;
+                }
             }
         }
 
@@ -223,7 +227,7 @@ section {
         }
 
         .adagio {
-            background-image: url('../img/adagio_1.png');
+            background-image: url('../img/adagio_1.jpeg');
         }
         .anziani {
             background-image: url('../img/unnamed.gif');
@@ -236,12 +240,6 @@ section {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 15px;
         }
-    }
-}
-
-@include mobile {
-    #dove {
-        padding-top: 30px;
     }
 }
 

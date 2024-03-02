@@ -12,7 +12,7 @@ html {
 
 body {
     /* font-family: 'Bad Script', cursive; */
-    font-family: "Caveat", cursive;
+    font-family: "Annie Use Your Telescope", cursive;
     transition: .7s;
 }
 
@@ -22,10 +22,27 @@ a {
 }
 
 p {
-    font-size: 27px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
 .background-white {
     background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.text-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
