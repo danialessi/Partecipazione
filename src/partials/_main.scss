@@ -21,10 +21,10 @@
 }
 
 .show_background {
-    background-image: url('../img/sabatok.jpg');
-    @include mobile {
+    background-image: url('../img/cuori_green.webp');
+    /* @include mobile {
         background-image: url('../img/sabatok-mobile.jpg');
-    }
+    } */
 }
 
 .hero_image {
@@ -161,6 +161,7 @@
 section {
     position: relative;
     background-color: #5c7378;
+    /* background-color: #90aeb4; */
     padding: 50px 0;
 
     @include mobile {
@@ -215,6 +216,12 @@ section {
             background-size: cover;
             height: 630px;
             background-position: center;
+            -webkit-box-shadow: 5px 5px 14px 2px rgba(0,0,0,0.64); 
+            box-shadow: 5px 5px 14px 2px rgba(0,0,0,0.64);
+            border-top: 10px solid white;
+            border-right: 10px solid white;
+            border-left: 10px solid white;
+            border-bottom: 40px solid white;
             
             @include mobile {
                 width: 100%;
