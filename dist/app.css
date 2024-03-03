@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  /* font-family: 'Bad Script', cursive; */
   font-family: "Annie Use Your Telescope", cursive;
   transition: 0.7s;
 }
@@ -143,10 +142,7 @@ img {
 }
 
 .show_background {
-  background-image: url("../img/cuori_green.webp");
-  /* @include mobile {
-      background-image: url('../img/sabatok-mobile.jpg');
-  } */
+  background-image: url("../img/sfondo_green.webp");
 }
 
 .hero_image {
@@ -164,11 +160,11 @@ img {
 }
 .hero_image h2 {
   font-size: clamp(50px, 3.385vw, 65px);
-  color: black;
+  color: white;
 }
 .hero_image h3 {
   font-size: 35px;
-  color: black;
+  color: white;
 }
 
 .sposi,
@@ -191,13 +187,17 @@ img {
   top: 10%;
 }
 .title h1 {
-  font-size: clamp(50px, 3.646vw, 70px);
-  color: white;
+  font-size: clamp(40px, 3.646vw, 70px);
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
 }
 .title h2 {
   font-size: 40px;
-  color: white;
+  color: black;
   z-index: 9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
 }
 @media screen and (max-width: 767px) {
   .title {
@@ -240,11 +240,11 @@ img {
 }
 .cta a {
   padding: 5px 20px 0 20px;
-  color: black;
+  color: white;
   font-size: clamp(20px, 1.302vw, 25px);
 }
 .cta .arrow {
-  color: black;
+  color: white;
   margin-top: 0;
 }
 .cta .bounce {
@@ -341,8 +341,8 @@ section .section-content .image {
 }
 @media screen and (max-width: 767px) {
   section .section-content .image {
-    width: 100%;
-    height: 400px;
+    width: 91%;
+    height: 340px;
   }
 }
 section .section-content .image img {
@@ -369,4 +369,10 @@ section .section-content .iban {
 
 h3 {
   font-size: clamp(25px, 1.563vw, 30px);
+}
+
+@media screen and (max-width: 767px) {
+  #dove {
+    padding: 0;
+  }
 }
