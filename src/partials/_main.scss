@@ -21,7 +21,11 @@
 }
 
 .show_background {
-    background-image: url('../img/sfondo_green.webp');
+    background-image: url('../img/new_sfondo_desktop.jpg');
+
+    @include mobile {
+        background-image: url('../img/new_mobile.jpg');
+    }
 }
 
 .hero_image {
@@ -72,7 +76,6 @@
     h1 {
         font-size: clamp(40px, 3.646vw, 70px);
         color: black;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 200;
     }
 
@@ -80,7 +83,6 @@
         font-size: 40px;
         color: black;
         z-index: 9;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 200;
     }
 
