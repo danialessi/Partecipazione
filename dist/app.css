@@ -378,6 +378,12 @@ h3 {
   }
 }
 
+.thanks {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
 footer {
   display: flex;
   justify-content: center;
