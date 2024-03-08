@@ -176,11 +176,20 @@ section {
             flex-direction: column;
         }
 
+        @include tablet {
+            flex-direction: column;
+        }
+
         .section-inner {
             width: 50%;
             padding: 0 100px;
 
             @include mobile {
+                width: 100%;
+                padding: 0 20px 50px;
+            }
+
+            @include tablet {
                 width: 100%;
                 padding: 0 20px 50px;
             }
@@ -228,6 +237,11 @@ section {
             @include mobile {
                 width: 93%;
                 height: 340px;
+            }
+
+            @include tablet {
+                width: 96%;
+                height: 550px;
             }
 
             img {
