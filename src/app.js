@@ -57,7 +57,8 @@ setTimeout(function() {
   document.getElementById("cta").classList.add("show");
 }, 6000);
 
-
+var date = new Date();
+var year = date.getFullYear();
 
 $( document ).ready(function() {
   $('.burger-menu').click(function() {
@@ -83,6 +84,8 @@ $( document ).ready(function() {
           //$('.burger-menu-container').removeClass('box-shadow');
       }
   }
+
+  $('#year').text(year);
 })
 
 

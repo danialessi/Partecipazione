@@ -63,6 +63,8 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById("cta").classList.add("show");
 }, 6000);
+var date = new Date();
+var year = date.getFullYear();
 $(document).ready(function () {
   $('.burger-menu').click(function () {
     $('.burger-menu-list-container').toggleClass("burger-menu-open");
@@ -84,6 +86,8 @@ $(document).ready(function () {
       $('.burger-menu-container').removeClass('burger-background'); //$('.burger-menu-container').removeClass('box-shadow');
     }
   }
+
+  $('#year').text(year);
 });
 /* COUNTDOWN */
 // Set the date we're counting down to

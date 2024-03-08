@@ -2,7 +2,7 @@
     display: none;
     z-index: 9;
     position: fixed;
-    padding: 10px 0;
+    padding: 2px 0;
 
     @include mobile {
         display: flex;
@@ -17,6 +17,7 @@
             opacity: 0;
             transform: translateY(30px);
             transition: 0.1s;
+            font-size: 30px;
         }
 
         .show-title {
@@ -55,7 +56,7 @@
 
         a {
             padding: 20px;
-            font-size: 20px;
+            font-size: 25px;
             color: white;
         }
 
@@ -64,14 +65,10 @@
             display: flex;
             flex-direction: column;
         }
-
-        img {
-            width: 78%;
-        }
     }
 
     .burger-menu-open {
-        top: 67px;
+        top: 47px;
         z-index: 9;
     }
     

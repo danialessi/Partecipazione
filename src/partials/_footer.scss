@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 10%;
+    background-color: #5c7377;
+    color: white;
+
+    .copyright {
+        padding: 0 30px;
+        font-size: 20px;
+    }
+
+    .contacts-list-desktop {
+        display: flex;
+        font-size: 23px;
+
+        .mail, .whatsapp {
+            margin-right: 15px;
+        }
+    }
+}
