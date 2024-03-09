@@ -10,7 +10,7 @@
 // TYPEWRITING FUNCTION
 var i = 0;
 var j = 0;
-var title = 'Sai chi sposa?';
+var title = 'Sai chi si sposa?';
 var hello = document.getElementById("hello");
 var stocaText = 'Sto cazzo';
 var stoca = document.getElementById("stoca");
