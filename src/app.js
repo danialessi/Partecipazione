@@ -25,7 +25,7 @@ function typeStoca() {
       j++;
       setTimeout(typeWriterStoca, stocaSpeed);
     }
-  }, 1800);
+  }, 2200);
 };
 
 typeTitle();
