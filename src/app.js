@@ -1,7 +1,7 @@
 // TYPEWRITING FUNCTION
 let i = 0;
 let j = 0;
-let title = 'Sai chi sposa?';
+let title = 'Sai chi si sposa?';
 let hello = document.getElementById("hello");
 let stocaText = 'Sto cazzo';
 let stoca = document.getElementById("stoca");
