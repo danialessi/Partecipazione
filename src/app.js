@@ -77,11 +77,9 @@ $( document ).ready(function() {
       if (window.scrollY > 250) {
         $('.fedi-dani').addClass('show-title');
         $('.burger-menu-container').addClass('burger-background');
-        //$('.burger-menu-container').addClass('box-shadow');
       } else {
           $('.fedi-dani').removeClass('show-title');
           $('.burger-menu-container').removeClass('burger-background');
-          //$('.burger-menu-container').removeClass('box-shadow');
       }
   }
 
@@ -115,9 +113,9 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "<i class='fa-solid fa-party-horn'></i>";
   }
 }, 1000);
 
 // scrollreveal
-ScrollReveal().reveal('.section-inner', { delay: 300});
+ScrollReveal().reveal('.section-inner', { delay: 200});

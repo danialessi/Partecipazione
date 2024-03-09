@@ -80,10 +80,10 @@ $(document).ready(function () {
   function revealTitle() {
     if (window.scrollY > 250) {
       $('.fedi-dani').addClass('show-title');
-      $('.burger-menu-container').addClass('burger-background'); //$('.burger-menu-container').addClass('box-shadow');
+      $('.burger-menu-container').addClass('burger-background');
     } else {
       $('.fedi-dani').removeClass('show-title');
-      $('.burger-menu-container').removeClass('burger-background'); //$('.burger-menu-container').removeClass('box-shadow');
+      $('.burger-menu-container').removeClass('burger-background');
     }
   }
 
@@ -109,12 +109,12 @@ var x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "<i class='fa-solid fa-party-horn'></i>";
   }
 }, 1000); // scrollreveal
 
 ScrollReveal().reveal('.section-inner', {
-  delay: 300
+  delay: 200
 });
 
 /***/ }),
